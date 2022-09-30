@@ -10,6 +10,8 @@ const server = http.createServer((req, res) => {
     res.end(body)
 })
 
-server.listen(3000)
 
-console.log('Started')
+const port = process.env.PORT || 3000
+server.listen(port)
+
+console.log('Started on port ' + port)
