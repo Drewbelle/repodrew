@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "vue": "^3.2.40"
+  },
+  "name": "repodrew",
+  "description": "",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drewbelle/repodrew.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drewbelle/repodrew/issues"
+  },
+  "homepage": "https://github.com/Drewbelle/repodrew#readme"
+}
