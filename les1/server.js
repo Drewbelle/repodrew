@@ -3,11 +3,15 @@ const fs = require('fs')
 
 
 const server = http.createServer((req, res) => {
-    console.log(req.url)
-    const body = req.url === '/style.css'
-    ? fs.readFileSync("./public/style.css")
-    : fs.readFileSync("./public/index.html")
+    const publicPath = './public';
+    let body = null;
+    try {
+    const body = fs.readFileSync(`${publicPath}${req.url}`)
+    } catch (e) {
+        console.log(e)
+    }
     res.end(body)
+
 })
 
 
