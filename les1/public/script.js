@@ -42,7 +42,7 @@ class goods {
 
 
     randMass () {
-        fetch("https://repodrew.vercel.app/public/database.json")
+        fetch("https://repodrew.vercel.app/database.json")
         for (let i=0; i<9; i++) {
             let randGood = Math.round(Math.random() * (25 - 1) + 1)
             let nGood = new good(goodslist[randGood].name, goodslist[randGood].price, goodslist[randGood].url)
