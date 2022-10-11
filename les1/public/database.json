@@ -1,0 +1,30 @@
+{
+    "goodslist": [
+        {"name": "BanjoCat", "price": 100, "url": "url(./cats/cat_banjo.png)"},
+        {"name": "BatCat", "price": 150, "url": "url(./cats/cat_bat.png)"},
+        {"name": "AssCat", "price": 200, "url": "url(./cats/cat_birdhouse.png)"},
+        {"name": "MilitaryCat", "price": 250, "url": "url(./cats/cat_box.png)"},
+        {"name": "PrissonerCat", "price": 300, "url": "url(./cats/cat_cage.png)"},
+        {"name": "ShopperCat", "price": 160, "url": "url(./cats/cat_cart.png)"},
+        {"name": "ClearCat", "price": 170, "url": "url(./cats/cat_clean.png)"},
+        {"name": "LovelyCat", "price": 190, "url": "url(./cats/cat_cupid.png)"},
+        {"name": "DrunkedCat", "price": 210, "url": "url(./cats/cat_drunk.png)"},
+        {"name": "CuteCat", "price": 220, "url": "url(./cats/cat_eyes.png)"},
+        {"name": "FatCat", "price": 250, "url": "url(./cats/cat_fat.png)"},
+        {"name": "AngryCat", "price": 240, "url": "url(./cats/cat_fight.png)"},
+        {"name": "HuntCat", "price": 140, "url": "url(./cats/cat_fish.png)"},
+        {"name": "HungryCat", "price": 130, "url": "url(./cats/cat_fridge.png)"},
+        {"name": "ScaryCat", "price": 230, "url": "url(./cats/cat_ghost.png)"},
+        {"name": "BirthsdayCat", "price": 90, "url": "url(./cats/cat_gift.png)"},
+        {"name": "SadCat", "price": 80, "url": "url(./cats/cat_grumpy.png)"},
+        {"name": "LadyCat", "price": 70, "url": "url(./cats/cat_lady.png)"},
+        {"name": "WorkerCat", "price": 60, "url": "url(./cats/cat_laptop.png)"},
+        {"name": "DictatorCat", "price": 100, "url": "url(./cats/cat_moustache.png)"},
+        {"name": "MummyCat", "price": 50, "url": "url(./cats/cat_mummy.png)"},
+        {"name": "SkullCat", "price": 170, "url": "url(./cats/cat_skull.png)"},
+        {"name": "HallowenCat", "price": 260, "url": "url(./cats/cat_pumpkin.png)"},
+        {"name": "SingerCat", "price": 270, "url": "url(./cats/cat_sing.png)"},
+        {"name": "SleeperCat", "price": 280, "url": "url(./cats/cat_sleep.png)"},
+        {"name": "PirateCat", "price": 290, "url": "url(./cats/cat_pirate.png)"}
+    ]
+}
