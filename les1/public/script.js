@@ -47,7 +47,7 @@ class goods {
                 return res.json()
             })
                 .then(data => {
-                    return data
+                    console.log(data)
                 })
                 console.log(data)
 
