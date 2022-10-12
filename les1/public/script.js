@@ -14,7 +14,8 @@ class goods {
 
 
     randMass () {
-        fetch("https://repodrew.vercel.app/database.json")
+        const result = fetch("https://repodrew.vercel.app/database.json")
+        return result
             .then(res => {
                 return res.json()
             })
