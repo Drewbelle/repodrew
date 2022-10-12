@@ -49,7 +49,6 @@ class goods {
                 .then(data => {
                     console.log(data)
                 })
-                console.log(data)
 
         for (let i=0; i<9; i++) {
             let randGood = Math.round(Math.random() * (25 - 1) + 1)
