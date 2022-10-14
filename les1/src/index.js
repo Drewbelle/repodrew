@@ -1,3 +1,4 @@
+import but from ".button.js"
 
 items = []
 class goods {
