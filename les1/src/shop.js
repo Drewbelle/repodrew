@@ -175,5 +175,5 @@ function ubavit(event, cartItems) {
 }
 
 function butmore() {
-    const newGoodsList = new goods()
+    let newGoodsList = new goods()
 }
