@@ -1,11 +1,11 @@
-import but from "./but.js"
 
-items = []
 class goods {
+    items = []
     
 
 
-    constructor () {
+    constructor (items = []) {
+        this.items = []
         let reqFNG = this.randMass()
         reqFNG.then(() =>{
             this.render()
@@ -24,14 +24,14 @@ class goods {
                     for (let i=0; i<9; i++) {
                         let randGood = Math.round(Math.random() * (25 - 1) + 1)
                         let nGood = new good(data.goodslist[randGood].name, data.goodslist[randGood].price, data.goodslist[randGood].url)
-                        items.push(nGood)
+                        this.items.push(nGood)
                     }
                 })
 
     }
 
     render() {
-        items.forEach(callback => {
+        this.items.forEach(callback => {
             callback.render()
         })
     }
@@ -125,22 +125,24 @@ class good {
 
 
 
-cartItems = []
+
 class cart {
+    cartItems = []
     
-    constructor (newBlock) {
+    constructor (newBlock, cartItems = []) {
+        this.cartItems = []
         this.render(newBlock)
     }
 
 
     render (newBlock) {
         const findCart = document.querySelector(".cartPlace")
-        const newJOPA = cartItems.find(item => item.className === CN)
+        const newJOPA = this.cartItems.find(item => item.className === CN)
 
         if (newJOPA == undefined)
         {
             findCart.appendChild(newBlock)
-            cartItems.push(newBlock)
+            this.cartItems.push(newBlock)
         }
         else
         {
@@ -154,19 +156,19 @@ class cart {
 }
 
 
-function dobavit(event) {
+function dobavit(event, cartItems) {
     var prib = Number(event.target.nextSibling.textContent)
     prib = prib + 1
     event.target.nextSibling.textContent = prib
 }
 
-function ubavit(event) {
+function ubavit(event, cartItems) {
     var ubav = Number(event.target.previousSibling.textContent)
     ubav = ubav - 1
     event.target.previousSibling.textContent = ubav
     if (ubav === 0 ) {
-        var delBlock = cartItems.indexOf(event.target.parentNode.parentNode)
-        cartItems.pop(delBlock)
+        var delBlock = this.cartItems.indexOf(event.target.parentNode.parentNode)
+        this.cartItems.pop(delBlock)
         const findCartForDel = document.querySelector(".cartPlace")
         findCartForDel.removeChild(event.target.parentNode.parentNode)
     }

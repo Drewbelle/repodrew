@@ -1,1 +1,1 @@
-(()=>{"use strict";items=[],cartItems=[]})();
+items=[],cartItems=[];
