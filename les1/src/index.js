@@ -1,4 +1,4 @@
-import but from ".button.js"
+import but from "./but.js"
 
 items = []
 class goods {
